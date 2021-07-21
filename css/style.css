@@ -1,94 +1,109 @@
+/*CSS Cho website*/
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
 body {
-	background: #f7feff;
-	font-family: sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: #333;
 	line-height: 1.254;
 	margin: 0;
 	padding: 0;
-	border-top: 10px solid #8bc34a;
 }
 
-#main {
-	width: 1200px;
-	margin: 0 auto;
-	background-color: #ffeb3b;
-	margin-top: 20px;
+a {
+	text-decoration: none;
+	color: #3b8bba;
 }
 
-#header {
-	background: #fd84ff;
-	height: 250px;
-	background: url('../img/header.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	text-align: center;
-	font-size: 40px;
-	float: left;
+a:hover, a:visited {
+	color: #265778;
+}
+
+/*Chia cột cho website*/
+#container {
+	padding-left: 150px;
+	position: relative;
+	left: 0;
 	width: 100%;
 }
 
+/*===Menu===*/
 #menu {
-	background: #00ff7e;
-	height: 150px;
-	width: 100%;
-	float: left;
+	position: fixed;
+	height: 100%;
+	background: #191818;
+	width: 150px;
+	left: 0;
 }
 
-.title_menu {
+#menu ul {
+	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.title_me {
-	text-align: center;
-	padding: 10px;
-	margin: 0;
-	text-transform: uppercase;
-	color: #607d8b;
-	border-bottom: 1px solid;
+#menu ul li {
+	line-height: 2.9em;
+	height: 2.9em;
+	transition: all 0.5s;
 }
 
-#slide {
-	margin-top: 5px;
-	float: left;
-	height: 300px;
-	width: 100%;
-	background: url('../img/1.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+#menu ul li a{
+	display: block;
+	color: #fff;
+	padding: 0 1em;
+	border-bottom: 1px solid #333;
+}
+
+#menu ul li:hover {
+	background: #454545;
+}
+
+#content {
+	padding: 1em 8em;
+}
+
+#header {
 	text-align: center;
-	font-size: 40px;
-	text-transform: uppercase;
+}
+
+#header #slogan{
+	color: #8997a0;
+	font-size: 0.8em;
+}
+
+.call-to-action {
+	text-align: center;
+	padding: 1.5em 20%;
+	background: #fefefe;
+	border: 1px solid #e8e8e8;
+	background: #f9f9f9;
+}
+
+.row {
+	overflow: hidden;
+	margin: 1.5em auto;
+}
+
+.row .col {
+	float: left;
+	width: 30.6%;
+	margin-right: 1em;
+}
+
+.row .col img {
+	height: 150px;
+	float: left;
+	margin-right: 15px;
 }
 
 #footer {
-	float: left;
-	width: 100%;
-	height: auto;
-	background-color: pink;
-	padding-bottom: 20px;
-}
-
-.title_footer {
+	font-size: 85%;
+	border-top: 1px solid #e6e6e6;
+	color: #838383;
 	text-align: center;
-	text-transform: uppercase;
-}
-
-.avata {
-	width: 150px;
-}
-
-.thanks {
-	float: left;
-    text-align: center;
-    width: 100%;
-    color: #fff;
-    background: #e27b49;
-    font-weight: bold;
-}
-
-.thanks p {
-	margin: 0;
-	padding: 10px;
 }
